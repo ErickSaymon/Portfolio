@@ -2,31 +2,50 @@
 
 body {
     margin: 0;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
     background: linear-gradient(-45deg, #0F2027, #203A43, #2C5364);
     background-size: 300% 300%;
     height: 100vh;
     animation: animacaoBackground 10s ease-in-out infinite;
-    align-items: center;
-    justify-content: center;
 }
 
-header h1, p, h2{
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    transform: translateX(0);
+}
+
+h1, p, h2{
     color: white;
     margin: 0;
     text-align: center;
 }
 
-header h1 {
+h1 {
     font-family: 'caveat', sans-serif;
 }
 
-header h2 {
+h2 {
     font-family: 'Bebas Neue';
+}
+
+main {
+    width: 100vw;
+}
+
+#about-me-bar {
+    top: 0;
+    position: sticky;
+    width: 50vw;
+    max-height: 100vh;
+}
+
+#about-me-text {
+    margin: auto;
+    max-width: 500px;
 }
 
 @keyframes animacaoBackground {
