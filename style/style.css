@@ -1,62 +1,55 @@
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&display=swap');
-
 body {
-    margin: 0;
-    background: linear-gradient(-45deg, #0F2027, #203A43, #2C5364);
-    background-size: 300% 300%;
     height: 100vh;
-    animation: animacaoBackground 10s ease-in-out infinite;
+    margin: 0;
+    background-image: url("background.jpg");
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+#opacity-box {
     width: 100vw;
     height: 100vh;
-    justify-content: center;
-    transform: translateX(0);
+    margin-top: 15px;
+    background-color: rgb(226 43 43 / 21%)
 }
 
-h1, p, h2{
+* {
     color: white;
-    margin: 0;
-    text-align: center;
 }
 
-h1 {
-    font-family: 'caveat', sans-serif;
-}
-
-h2 {
-    font-family: 'Bebas Neue';
-}
-
-main {
-    width: 100vw;
-}
-
-#about-me-bar {
-    top: 0;
-    position: sticky;
-    width: 50vw;
-    max-height: 100vh;
-}
-
-#about-me-text {
+#container {
     margin: auto;
-    max-width: 500px;
+    text-align: center;
+    min-width: 90%;
+    width: 90%;
+    min-height: 95vh;
+    background-color: #7f1158;
+    box-shadow: 0px 0px 1px #ab00a6;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
 }
 
-@keyframes animacaoBackground {
-    0% {
-        background-position: 0% 80%;
-    }
-    50% {
-        background-position: 80% 100%;
-    }
-
-    100% {
-        background-position: 0% 80%;
-    }
+#menu {
+    margin-top: 180px;
 }
+
+.center {
+    margin-top: 100px;
+}
+
+.btn {
+    height: 25px;
+    width: 100px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px black;
+    border-radius: 50px;
+}
+
+.button-wrapper canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
